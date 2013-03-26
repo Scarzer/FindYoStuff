@@ -1,0 +1,15 @@
+{
+  "name": "FindYoShit",
+  "version": "0.0.2",
+  "author": "Irving Derin <irving.derin@gmail.com>",
+  "description": "Find your shit when you lose it",
+  "dependencies": {
+    "express": "3.1.0",
+    "mongoose": "3.6.0",
+    "socket.io": "0.9.13"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "licence": "MIT"
+}
