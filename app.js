@@ -49,6 +49,12 @@ app.configure(function() {
 
 
 // API routes!
+
+app.post('/tag', function(req, res){
+    res.send("I'm sorry, but that is incorrect, you cannot write ");
+    res.end();
+})
+
 app.post('/tag/:id', function(req, res){
     console.log("Post the cow. Hug it as well!");
     res.send("Thank you for the post");

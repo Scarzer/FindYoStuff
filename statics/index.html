@@ -8,10 +8,10 @@
 <body>
     <h1> Stuff Stuff Stuff </h1>
     <ul>
-        <li><label>Tag Number</label><input type="text"><button onclick="postCow()">POST Tag</button></li>
-        <li><label>Tag Number</label><input type="text"><button onclick="getCow()">GET Tag</button></li>
-        <li><label>Tag Number</label><input type="text"><button onclick="putCow()">PUT Tag</button></li>
-        <li><label>Tag Number</label><input type="text"><button onclick="deleteCow()">DELETE Tag</button></li>
+        <li><label>Tag Number</label><input type="text" name="postTag" id="postTag"><button onclick="postCow()">POST Tag</button></li>
+        <li><label>Tag Number</label><input type="text" name="getTag" id="getTag"><button onclick="getCow()">GET Tag</button></li>
+        <li><label>Tag Number</label><input type="text" name="putTag" id="putTag"><button onclick="putCow()">PUT Tag</button></li>
+        <li><label>Tag Number</label><input type="text" name="delTag" id="delTag"><button onclick="delCow()">DELETE Tag</button></li>
     </ul>
 
     <div id="containerResults">
@@ -19,13 +19,16 @@
     </div>
 
     <script>
-        $.ajaxSetup({
-            url: 'http://localhost:8000/tag/1523'
-        })
+        var baseURL = "http://localhost:8000/tag/";
+
 
         function postCow(){
             console.log("Posting Cow");
-            $.ajax({type: 'POST'});
+            var idNum = document.getElementById("postTag").value;
+            $.ajax({
+                type: 'POST',
+                url: baseURL +  idNum
+            });
         };
 
         function getCow(){
@@ -38,7 +41,7 @@
             console.log("Putting Cow");
         }
 
-        function deleteCow(){
+        function delCow(){
             $.ajax({type: 'DELETE'});
             console.log("Deleting Cow");
         }
