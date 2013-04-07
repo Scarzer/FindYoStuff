@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/libraries/jquery-1.9.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/mongooseHelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FindYoShit.iws" />
@@ -13,7 +17,7 @@
     <file path="/tagTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887006467" ignored="false" />
     <file path="/parentTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887148444" ignored="false" />
     <file path="/index.html" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364990992774" ignored="false" />
-    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365312780468" ignored="false" />
+    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365314002536" ignored="false" />
     <file path="/a.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365008221314" ignored="false" />
     <file path="/mongooseHelper.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365033688841" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,10 +39,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.6511628">
+            <state line="64" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-1.9.1.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statics/libraries/jquery-1.9.1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="348" column="18" selection-start="9260" selection-end="9260" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -270,17 +283,22 @@
       <created>1364991980190</created>
       <updated>1364991980190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Snapshot commit">
+      <created>1365312953999</created>
+      <updated>1365312953999</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="683" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27300614" sideWeight="0.7291667" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27300614" sideWeight="0.671875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -290,7 +308,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -358,13 +375,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/parentTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="57" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
@@ -459,7 +469,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.6511628">
+        <state line="64" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/libraries/jquery-1.9.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="348" column="18" selection-start="9260" selection-end="9260" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
