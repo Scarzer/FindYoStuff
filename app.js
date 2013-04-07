@@ -18,9 +18,19 @@
 
 var express = require('express'),
     mongoose = require('mongoose'),
+    db = mongoose.createConnection('localhost', 'test');
     path = require('path'),
     appRoot = __dirname,
     app = express();
+
+
+var tagSchema = new mongoose.Schema({
+    id : String,
+    givenName : String,
+    parent : [{ id: String, givenName: String}],
+    isLost : Boolean,
+    lastLocation : Number
+});
 
 // Let's get into the database right here!
 mongoose.connect('mongodb://localhost/FindYoStuff');
@@ -39,32 +49,30 @@ app.configure(function() {
 
 
 // API routes!
-app.post('/cow', function(req, res){
+app.post('/tag/:id', function(req, res){
     console.log("Post the cow. Hug it as well!");
     res.send("Thank you for the post");
     res.end();
 });
 
-app.del('/cow', function(req, res){
+app.del('/tag/:id', function(req, res){
     console.log("Delete the cow, make burger!");
     res.send("The damn thing was deleted =[");
+    res.send(req.params.id);
     res.end();
 });
 
-app.get('/cow', function(req, res){
+app.get('/tag/:id', function(req, res){
     console.log("Get the cow. Get the milk. ???. Profit!");
     res.send("Get it!?!");
     res.end();
 });
 
-app.put('/cow', function(req, res){
+app.put('/tag/:id', function(req, res){
     console.log("PUT THE COW DOWN!!! NAOW!!!");
     res.end();
 });
 
-app.options('/cow', function(req, res){
-    console.log("We shouldn't be getting this....");
-});
 
 app.listen(8000);
 console.log("Server was started! Don't worry =]");
