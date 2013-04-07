@@ -57,6 +57,7 @@ app.post('/tag/:id', function(req, res){
 
 app.del('/tag/:id', function(req, res){
     console.log("Delete the cow, make burger!");
+    console.log(req.params.id)
     res.send("The damn thing was deleted =[");
     res.send(req.params.id);
     res.end();

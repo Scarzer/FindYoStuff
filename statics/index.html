@@ -8,11 +8,15 @@
 <body>
     <h1> Stuff Stuff Stuff </h1>
     <ul>
-        <li><button onclick="postCow()">POST COW</button></li>
-        <li><button onclick="getCow()">GET COW</button></li>
-        <li><button onclick="putCow()">PUT COW</button></li>
-        <li><button onclick="deleteCow()">DELETE COW</button></li>
+        <li><label>Tag Number</label><input type="text"><button onclick="postCow()">POST Tag</button></li>
+        <li><label>Tag Number</label><input type="text"><button onclick="getCow()">GET Tag</button></li>
+        <li><label>Tag Number</label><input type="text"><button onclick="putCow()">PUT Tag</button></li>
+        <li><label>Tag Number</label><input type="text"><button onclick="deleteCow()">DELETE Tag</button></li>
     </ul>
+
+    <div id="containerResults">
+        <h2>Your results will be here: </h2>
+    </div>
 
     <script>
         $.ajaxSetup({
