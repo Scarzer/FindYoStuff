@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/statics/index.html" line="73" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" name="Default" comment="Snapshot commit:&#10;Bunch of additions!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/index.css" afterPath="$PROJECT_DIR$/statics/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/index.html" afterPath="$PROJECT_DIR$/statics/index.html" />
+    <list default="true" id="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FindYoShit.iws" />
@@ -16,7 +13,7 @@
     <file path="/tagTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887006467" ignored="false" />
     <file path="/parentTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887148444" ignored="false" />
     <file path="/index.html" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365439623524" ignored="false" />
-    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365436563978" ignored="false" />
+    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443069560" ignored="false" />
     <file path="/a.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365008221314" ignored="false" />
     <file path="/mongooseHelper.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365033688841" ignored="false" />
     <file path="/index.css" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365441954661" ignored="false" />
@@ -43,7 +40,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="55" selection-start="2512" selection-end="2512" vertical-scroll-proportion="-1.4697337">
+            <state line="154" column="62" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.38256657">
               <folding />
             </state>
           </provider>
@@ -267,7 +264,11 @@
       <created>1365435459212</created>
       <updated>1365435459212</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Snapshot commit:&#10;Bunch of additions!">
+      <created>1365443074569</created>
+      <updated>1365443074569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -453,7 +454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="55" selection-start="2512" selection-end="2512" vertical-scroll-proportion="-1.4697337">
+        <state line="154" column="62" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.38256657">
           <folding />
         </state>
       </provider>
