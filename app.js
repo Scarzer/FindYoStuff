@@ -50,7 +50,7 @@ app.configure(function() {
 
 // API routes!
 
-app.post('/tag', function(req, res){
+app.post('/tag/', function(req, res){
     res.send("I'm sorry, but that is incorrect, you cannot write ");
     res.end();
 })

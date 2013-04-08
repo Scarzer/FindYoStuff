@@ -32,8 +32,14 @@
         };
 
         function getCow(){
-            $.ajax({type: 'GET'});
             console.log("Getting Cow");
+            var idNum = document.getElementById("getTag").value;
+            $.ajax({
+                type: 'GET',
+                url: baseURL + idNum
+
+            });
+
         }
 
         function putCow(){
@@ -45,6 +51,7 @@
             $.ajax({type: 'DELETE'});
             console.log("Deleting Cow");
         }
+
 
 
 
