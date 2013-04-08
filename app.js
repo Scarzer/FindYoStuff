@@ -34,21 +34,21 @@ var tagSchema = new mongoose.Schema({
 
 var randomThing = {
     1 : {
-        name : "Foo",
+        name : "Tag"+1,
         number : "1234",
         lastLoc : 2141124,
         timeAdded: 1000000000
     },
 
     2 : {
-        name : "Bar",
+        name : "Tag"+2,
         number : "54321",
         lastLoc : 123131,
         timeAdded : 1000000000
     },
 
     3 : {
-        name : "Baz",
+        name : "Tag"+3,
         number : "9asdf18231",
         lastLoc : 912341,
         timeAdded : 1000000000
@@ -85,12 +85,14 @@ app.post('/tag/', function(req, res){
 app.post('/tag/:id', function(req, res){
     // IDed request for tag
     // This should be creating a new tag
+    var idNum = req.params.id;
     console.log("Post the cow. Hug it as well!");
-    console.log("The requested tag is: " + req.params.id)
-    randomThing[req.params.id] = {
-        name : "NewTag",
-        number : str(Math.random())
-
+    console.log("The requested tag is: " + idNum);
+    randomThing[idNum] = {
+        name : "Tag"+idNum,
+        number : getRandomInt(100000, 10000000),
+        lastLoc : getRandomInt(1000,100000),
+        timeAdded : Date.now()
     }
     res.send("Thank you for the post");
     res.end();
@@ -119,8 +121,9 @@ app.get('/tag/', function(req, res){
     "use strict";
     // None IDed GET request for tag
     // This will get all current tags
+    var idNum = req.params.id;
     console.log("There would be a lot of things here");
-    console.log("The requested tag is: " + req.params.id);
+    console.log("The requested tag is: " + idNum);
     res.send(randomThing);
     res.end();
 })
@@ -128,9 +131,10 @@ app.get('/tag/', function(req, res){
 app.get('/tag/:id', function(req, res){
     // IDed GET request for tag
     // This will get a specific tag
+    var idNum = req.params.id;
     console.log("Get the cow. Get the milk. ???. Profit!");
-    console.log("The requested tag is: " + req.params.id);
-    res.send(randomThing[req.params.id]);
+    console.log("The requested tag is: " + idNum);
+    res.send( { idNum : randomThing[idNum]});
     res.end();
 });
 
@@ -151,3 +155,12 @@ app.put('/tag/:id', function(req, res){
 
 app.listen(8000);
 console.log("Server was started! Don't worry =]");
+
+
+
+
+// Various Functions to be eventually moved
+function getRandomInt(min, max){
+    "use strict";
+    return Math.floor( Math.random() * (max - min + 1) + min);
+}
