@@ -13,7 +13,7 @@
     <file path="/tagTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887006467" ignored="false" />
     <file path="/parentTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887148444" ignored="false" />
     <file path="/index.html" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365379035946" ignored="false" />
-    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365379573274" ignored="false" />
+    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365379777634" ignored="false" />
     <file path="/a.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365008221314" ignored="false" />
     <file path="/mongooseHelper.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365033688841" ignored="false" />
     <file path="/index.css" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365365988178" ignored="false" />
@@ -257,7 +257,11 @@
       <created>1365379577071</created>
       <updated>1365379577071</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Snapshot commit&#10;Modifications to index for callbacks">
+      <created>1365379781664</created>
+      <updated>1365379781664</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
