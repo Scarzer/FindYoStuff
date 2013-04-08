@@ -32,13 +32,36 @@ var tagSchema = new mongoose.Schema({
     lastLocation : Number
 });
 
+var randomThing = {
+    1 : {
+        name : "Foo",
+        number : "1234",
+        lastLoc : 2141124,
+        timeAdded: 1000000000
+    },
+
+    2 : {
+        name : "Bar",
+        number : "54321",
+        lastLoc : 123131,
+        timeAdded : 1000000000
+    },
+
+    3 : {
+        name : "Baz",
+        number : "9asdf18231",
+        lastLoc : 912341,
+        timeAdded : 1000000000
+    }
+}
+
 // Let's get into the database right here!
 mongoose.connect('mongodb://localhost/FindYoStuff');
 
 
 // Express Configurations
 
-app.configure(function() { 
+app.configure(function(){
     app.use(express.logger('dev') ); // Verbosity of the logging
     app.use(express.bodyParser() ); // For future extrapulation of the body
     app.use(express.methodOverride());
@@ -50,33 +73,78 @@ app.configure(function() {
 
 // API routes!
 
+
+
 app.post('/tag/', function(req, res){
+    // For an empty PUT request for tag
+    // This should return an error
     res.send("I'm sorry, but that is incorrect, you cannot write ");
     res.end();
 })
 
 app.post('/tag/:id', function(req, res){
+    // IDed request for tag
+    // This should be creating a new tag
     console.log("Post the cow. Hug it as well!");
+    console.log("The requested tag is: " + req.params.id)
+    randomThing[req.params.id] = {
+        name : "NewTag",
+        number : str(Math.random())
+
+    }
     res.send("Thank you for the post");
     res.end();
 });
 
+app.del('/tag/', function(req, res){
+    "use strict";
+    // For a general DEL request for tag
+    console.log("You shouldn't be trying to delete everything");
+    res.send("NO! You can't delete everything!");
+    res.end();
+})
+
+
 app.del('/tag/:id', function(req, res){
+    // IDed DELETE request for tag
+    // This will delete the named ID
     console.log("Delete the cow, make burger!");
-    console.log(req.params.id)
+    console.log("The requested tag is: " + req.params.id)
     res.send("The damn thing was deleted =[");
     res.send(req.params.id);
     res.end();
 });
 
+app.get('/tag/', function(req, res){
+    "use strict";
+    // None IDed GET request for tag
+    // This will get all current tags
+    console.log("There would be a lot of things here");
+    console.log("The requested tag is: " + req.params.id);
+    res.send(randomThing);
+    res.end();
+})
+
 app.get('/tag/:id', function(req, res){
+    // IDed GET request for tag
+    // This will get a specific tag
     console.log("Get the cow. Get the milk. ???. Profit!");
-    res.send("Get it!?!");
+    console.log("The requested tag is: " + req.params.id);
+    res.send(randomThing[req.params.id]);
     res.end();
 });
 
+app.put('/tag/', function(req, res){
+    "use strict";
+    console.log("SOOOO, that's great but there isn't much you can do here");
+    res.send("We are not updating everything");
+    res.end();
+})
+
 app.put('/tag/:id', function(req, res){
     console.log("PUT THE COW DOWN!!! NAOW!!!");
+    console.log("The requested tag is: " + req.params.id);
+    res.send("Updating!~");
     res.end();
 });
 

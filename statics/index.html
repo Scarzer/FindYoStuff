@@ -2,33 +2,46 @@
 <head>
     <title> Find Yo' Stuff! </title>
     <script src="libraries/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="libraries/functions.js" type="text/javascript"></script>
     <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1> Stuff Stuff Stuff </h1>
+    <h1> Find Yo' Stuff! </h1>
+    <nav>
+        <ul>
+            <li id="navPostTag"><a href="#"> Post Tag</a></li>
+            <li id="navGetTag"><a href="#">Get Tag</a></li>
+            <li id="navPutTag"><a href="#">Put Tag</a></li>
+            <li id="navDelTag"><a href="#">Del Tag</a></li>
+        </ul>
+    </nav>
     <ul>
-        <li><label>Tag Number</label><input type="text" name="postTag" id="postTag"><button onclick="postCow()">POST Tag</button></li>
-        <li><label>Tag Number</label><input type="text" name="getTag" id="getTag"><button onclick="getCow()">GET Tag</button></li>
-        <li><label>Tag Number</label><input type="text" name="putTag" id="putTag"><button onclick="putCow()">PUT Tag</button></li>
-        <li><label>Tag Number</label><input type="text" name="delTag" id="delTag"><button onclick="delCow()">DELETE Tag</button></li>
+        <li id="liPost"><label>Tag Number</label><input type="text" name="postTag" id="postTag"><button onclick="postCow()">POST Tag</button></li>
+        <li id="liGet"><label>Tag Number</label><input type="text" name="getTag" id="getTag"><button onclick="getCow()">GET Tag</button></li>
+        <li id="liPut"><label>Tag Number</label><input type="text" name="putTag" id="putTag"><button onclick="putCow()">PUT Tag</button></li>
+        <li id="liDel"><label>Tag Number</label><input type="text" name="delTag" id="delTag"><button onclick="delCow()">DELETE Tag</button></li>
     </ul>
 
     <div id="containerResults">
         <h2>Your results will be here: </h2>
+        <button onclick="clearResults()">Clear Results</button>
+
+        <div id="resultLabels"><p>NAME</p> <p>NUMBER</p> <p>LASTLOC</p></div>
+        <ul id="resultList"></ul>
     </div>
 
     <script>
         var baseURL = "http://localhost:8000/tag/";
-
 
         function postCow(){
             console.log("Posting Cow");
             var idNum = document.getElementById("postTag").value;
             $.ajax({
                 type: 'POST',
-                url: baseURL +  idNum
-            });
+                url: baseURL +  idNum,
+                success: (successPostTag)
+            })
         };
 
         function getCow(){
@@ -36,24 +49,32 @@
             var idNum = document.getElementById("getTag").value;
             $.ajax({
                 type: 'GET',
-                url: baseURL + idNum
+                url: baseURL + idNum,
+                success: (successGetTag)
 
             });
 
         }
 
         function putCow(){
-            $.ajax({type: 'PUT'});
             console.log("Putting Cow");
+            var idNum = document.getElementById("putTag").value;
+            $.ajax({
+                type: 'PUT',
+                url: baseURL + idNum,
+                success: (successPutTag)
+            });
         }
 
         function delCow(){
-            $.ajax({type: 'DELETE'});
             console.log("Deleting Cow");
+            var idNum = document.getElementById("delTag").value;
+            $.ajax({
+                type: 'DELETE',
+                url: baseURL + idNum,
+                success: (successDelTag)
+            });
         }
-
-
-
 
     </script>
 </body>
