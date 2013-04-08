@@ -38,7 +38,8 @@
 
         function postCow(){
             console.log("Posting Cow");
-            var idNum = document.getElementById("postTag").value;
+            var idNum = $(postTag).val();
+            $(postTag).val("");
             $.ajax({
                 type: 'POST',
                 url: baseURL +  idNum,
@@ -48,7 +49,8 @@
 
         function getCow(){
             console.log("Getting Cow");
-            var idNum = document.getElementById("getTag").value;
+            var idNum = $(getTag).val();
+            $(getTag).val("");
             $.ajax({
                 type: 'GET',
                 url: baseURL + idNum,
@@ -60,7 +62,8 @@
 
         function putCow(){
             console.log("Putting Cow");
-            var idNum = document.getElementById("putTag").value;
+            var idNum = $(putTag).val();
+            $(putTag).val("");
             $.ajax({
                 type: 'PUT',
                 url: baseURL + idNum,
@@ -70,7 +73,8 @@
 
         function delCow(){
             console.log("Deleting Cow");
-            var idNum = document.getElementById("delTag").value;
+            var idNum = $(delTag).val();
+            $(delTag).val("");
             $.ajax({
                 type: 'DELETE',
                 url: baseURL + idNum,

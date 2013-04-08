@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/statics/index.html" line="73" />
+    <bookmark url="file://$PROJECT_DIR$/statics/index.html" line="77" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/index.html" afterPath="$PROJECT_DIR$/statics/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FindYoShit.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/app.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365442992899" ignored="false" />
+    <file path="/app.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443299490" ignored="false" />
     <file path="/tagTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887006467" ignored="false" />
     <file path="/parentTemplate.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1364887148444" ignored="false" />
-    <file path="/index.html" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365439623524" ignored="false" />
-    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443069560" ignored="false" />
+    <file path="/index.html" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443759129" ignored="false" />
+    <file path="/Dummy.txt" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443179036" ignored="false" />
     <file path="/a.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365008221314" ignored="false" />
     <file path="/mongooseHelper.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365033688841" ignored="false" />
     <file path="/index.css" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365441954661" ignored="false" />
-    <file path="/functions.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365442437877" ignored="false" />
+    <file path="/functions.js" changelist="20ac0bc1-9b2a-4858-8ad1-355cdfacc7b1" time="1365443646330" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +39,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="62" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.38256657">
+            <state line="126" column="30" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statics/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="20" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-9.333333">
-              <folding>
-                <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="77" column="128" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.6529563">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +60,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/libraries/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="58" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
+            <state line="40" column="19" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,14 +96,16 @@
         <option value="$PROJECT_DIR$/templates/tagTemplate.js" />
         <option value="$PROJECT_DIR$/templates/parentTemplate.js" />
         <option value="$PROJECT_DIR$/helpers/mongooseHelper.js" />
-        <option value="$PROJECT_DIR$/statics/index.html" />
-        <option value="$PROJECT_DIR$/statics/libraries/functions.js" />
         <option value="$PROJECT_DIR$/statics/index.css" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/statics/libraries/functions.js" />
+        <option value="$PROJECT_DIR$/statics/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
+    <option name="y" value="312" />
     <option name="width" value="1366" />
     <option name="height" value="743" />
   </component>
@@ -268,11 +270,15 @@
       <created>1365443074569</created>
       <updated>1365443074569</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Snapshot commit:&#10;Bunch of additions!">
+      <created>1365443181044</created>
+      <updated>1365443181044</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="743" extended-state="4" />
+    <frame x="1920" y="312" width="1366" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32612312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -365,9 +371,7 @@
     <entry file="file://$PROJECT_DIR$/statics/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -429,13 +433,6 @@
         <state line="635" column="49" selection-start="16524" selection-end="16524" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/libraries/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="58" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statics/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="60" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
@@ -443,18 +440,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statics/index.html">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-9.333333">
-          <folding>
-            <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="126" column="30" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/statics/libraries/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="62" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.38256657">
+        <state line="40" column="19" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="128" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.6529563">
           <folding />
         </state>
       </provider>

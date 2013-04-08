@@ -110,10 +110,11 @@ app.del('/tag/', function(req, res){
 app.del('/tag/:id', function(req, res){
     // IDed DELETE request for tag
     // This will delete the named ID
+    var idNum = req.params.id;
     console.log("Delete the cow, make burger!");
-    console.log("The requested tag is: " + req.params.id)
-    res.send("The damn thing was deleted =[");
-    res.send(req.params.id);
+    console.log("The requested tag is: " + idNum)
+    delete randomThing[idNum];
+    res.send(idNum);
     res.end();
 });
 
