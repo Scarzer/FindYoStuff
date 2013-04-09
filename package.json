@@ -1,6 +1,6 @@
 {
   "name": "FindYoShit",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "author": "Irving Derin <irving.derin@gmail.com>",
   "description": "Find your shit when you lose it",
   "dependencies": {
