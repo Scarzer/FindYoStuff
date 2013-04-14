@@ -1,11 +1,21 @@
 body{
     text-align: center;
-    width: 500px;
+    width: 900px;
     border-color: #d1ff32;
 }
 
 ul{
-    text-align: right;
+    text-align: left;
+}
+
+section{
+    display: inline;
+    float: left;
+}
+
+#secResults{
+    display: none;
+   	float: right;
 }
 
 button{

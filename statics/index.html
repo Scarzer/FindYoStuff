@@ -16,22 +16,34 @@
             <li id="navDelTag"><a href="#">Del Tag</a></li>
         </ul>
     </nav>
+    <section id="SecselectMethod">
     <ul>
         <li id="liPost"><label>Tag Number</label><input type="text" name="postTag" id="postTag"><button onclick="postCow()">POST Tag</button></li>
         <li id="liGet"><label>Tag Number</label><input type="text" name="getTag" id="getTag"><button onclick="getCow()">GET Tag</button></li>
         <li id="liPut"><label>Tag Number</label><input type="text" name="putTag" id="putTag"><button onclick="putCow()">PUT Tag</button></li>
         <li id="liDel"><label>Tag Number</label><input type="text" name="delTag" id="delTag"><button onclick="delCow()">DELETE Tag</button></li>
     </ul>
+    </section>
+    <section id="SectagForm">
+        <h2>Tag Form!</h2>
+        <form id="tagForm">
+            <ul>
+                <li><label>Tag Name</label><input type="text" name="in_nameTag" id="in_nameTag"></li>
+                <li><label>Tag ID</label><input type="number" name="in_numberTag" id="in_numberTag"> </li>
+            </ul>
+        </form>
+    </section>
+    <section id="SecResults">
+        <div id="containerResults">
+            <h2>Your results will be here: </h2>
+            <button onclick="clearResults()">Clear Results</button>
 
-    <div id="containerResults">
-        <h2>Your results will be here: </h2>
-        <button onclick="clearResults()">Clear Results</button>
-
-        <div id="resultLabels"><p>NAME</p> <p>NUMBER</p> <p>LASTLOC</p></div>
-        <table id="resultTable">
-            <div id="containRows"></div>
-        </table>
-    </div>
+            <div id="resultLabels"><p>NAME</p> <p>NUMBER</p> <p>LASTLOC</p></div>
+            <table id="resultTable">
+                <div id="containRows"></div>
+            </table>
+        </div>
+    </section>
 
     <script>
         var baseURL = "http://localhost:8000/tag/";
