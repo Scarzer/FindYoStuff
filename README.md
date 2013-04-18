@@ -15,15 +15,15 @@ Started out by following a tutorial, I am starting to take my own direction with
 
 ### POST
 
-* /tag/
+#### /tag/
 - You can not preform anything in this situation. An error will be returned
 
-* /tag/:id
+#### /tag/:id
 - This will create a new tag in the current running instance of the server.
 
 ### GET
 
-* /tag/
+#### /tag/
 - This will return a JSON with ALL current tags that are saved in the current instance.
 JSON files are in the format:
 ``` javascript
@@ -37,5 +37,5 @@ JSON files are in the format:
     }
 ```
 
-* /tag/:id
+#### /tag/:id
 - This will return a single JSON of the specified ID number!
