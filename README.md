@@ -16,16 +16,17 @@ Started out by following a tutorial, I am starting to take my own direction with
 ### POST
 
 * /tag/
-You can not preform anything in this situation. An error will be returned
+- You can not preform anything in this situation. An error will be returned
 
 * /tag/:id
-This will create a new tag in the current running instance of the server.
+- This will create a new tag in the current running instance of the server.
 
 ### GET
 
 * /tag/
-This will return a JSON with ALL current tags that are saved in the current instance.
+- This will return a JSON with ALL current tags that are saved in the current instance.
 JSON files are in the format:
+``` javascript
     {
         "#" : {
             "name" : [tag] + #,
@@ -34,7 +35,7 @@ JSON files are in the format:
             "timeAdded" : [UTC TimeStamp]
         }
     }
-
+```
 
 * /tag/:id
-This will return a single JSON of the specified ID number!
+- This will return a single JSON of the specified ID number!
